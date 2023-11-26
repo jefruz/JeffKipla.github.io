@@ -1,0 +1,499 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: auto;
+    background-color: #706f6f;
+    color: #00ffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header section */
+
+header {
+    background-color: #222121;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: end;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Align items to the start and end */
+    align-items: center; /* Center items vertically */
+}
+
+.my-name {
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #164af3;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin for the last item to prevent extra space */
+}
+
+
+.need-site {
+    background-color: #13750a;
+    color: #fff;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1px; /* Adjust margin for buttons */
+    padding: 7px 20px; /* Adjust padding for buttons */
+    position: relative;
+    cursor: pointer;
+}
+
+.need-site:hover {
+    background-color: #19ce13;
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    color: #0cfdfd;
+    text-decoration: none;
+    position: relative; /* Set position to relative */
+    transition: color 0.3s, transform 0.3s; /* Add transition for smooth color and transform changes */
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #08a3a3; /* Set the color of the underline */
+    transition: width 0.3s; /* Add transition for smooth width change */
+    position: absolute; /* Set position to absolute */
+    bottom: -10px; /* Align the underline to the bottom of the link */
+    left: 0; /* Start the underline from the left of the link */
+    
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expand the underline to full width on hover */
+}
+
+nav ul li a:hover {
+    color: #08a3a3;
+    transform: scale(1.1); /* Scale the element by 1.1 on hover */
+}
+
+
+
+
+/* Heros section */
+
+.hero {
+    background:  linear-gradient(90deg, #000, #252525, #3b3b3b, #c9c9c9, #dad8d8, #fff);
+    text-align: center;
+    padding: 100px 0;
+    color: #b6cec6;
+    display: flex;
+    align-items: center;
+    height: auto;
+    box-sizing: border-box;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.hero div {
+    margin-left: 70px;
+}
+
+.hero img {
+    margin-left: 500px;
+    box-sizing: border-box;
+    border-radius: 90px;
+    box-shadow: 0 0 10px 10px rgba(66, 66, 66, 0.5); /* Add a blurred border effect */
+    width: 300px;
+    height: auto;
+}
+
+.port-folio {
+    color: rgb(105, 95, 245);
+    font-size: 70px;
+}
+
+.wd {
+    color: #00ffff;
+    font-size: 33px;
+}
+
+.designer {
+    color: #14c90d;
+    font-size: 33px;
+}
+
+p {
+    color: #ffffff;
+}
+
+hr {
+    width: 70%;
+    color: #14c90d;
+}
+
+.hire-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.hire-me button {
+    background-color: #757474;
+    padding: 20px 40px;
+    margin-right: 20px; /* Add margin to create space between buttons */
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    border: none;
+    position: relative;
+}
+
+.emoji {
+    font-size: 24px;
+    position: relative;
+    top: 20%;
+    left: %;
+    transform: translate(-50%, -50%);
+}
+
+.hire-me button:last-child {
+    margin-right: 0; /* Remove margin for the last button to prevent extra space */
+}
+
+.hire-me button br {
+    display: none; /* Hide line breaks */
+}
+
+.hire-me button:hover {
+    background-color: #555; /* Change background color on hover */
+    filter: grayscale(100%); /* Convert to black and white */
+}
+
+
+
+/* Abouts and Portfolio section */
+
+.about, .portfolio {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    cursor: grab;
+    transition: transform 0.3s;
+    transform-origin: center center;
+    object-fit: cover;
+}
+
+.project img:hover {
+    transform: scale(1.1);
+    cursor: grab;
+}
+
+.project div {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.image-gallery {
+    scroll-snap-align: center;
+    min-width: 75%;
+}
+
+.about p {
+    color: #e9e6e6;
+    background:  linear-gradient(90deg, #000, #0b0041, #070166, #20018f, #1d03af, #0703f0);
+    padding: 20px;
+    border-radius: 50px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    box-shadow: 0 0 10px 10px rgba(66, 66, 66, 0.5);
+}
+
+.about-btns button {
+    background-color: #009900;
+    color: #f0f0f0;
+    transition: all 0.3s ease; /* Add smooth transition for button properties */
+    animation: shake 1.5s infinite 2s;
+}
+
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+}
+
+
+.skill-bar {
+    margin-bottom: 10px;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+}
+
+/* Style progress bar appearance */
+progress[value] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 30%;
+    height: 20px;
+    border: none;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin: auto;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: rgb(214, 213, 213);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #009900;
+    border-radius: 5px;
+}
+
+/* Classes section */
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    text-align: center;
+    color: #104634;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px; /* Adjust margin for buttons */
+    padding: 15px 20px; /* Adjust padding for buttons */
+    position: relative;
+}
+
+.button::before {
+    content: '';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.button:hover::before {
+    content: '\f061'; /* Unicode for Font Awesome icon (e.g., home icon) */
+    opacity: 1;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: #104634;
+}
+
+.back-to-top {
+    display: none;
+    position: relative;
+    text-align: center;
+    bottom: 20px;
+    background-color: #333;
+    color: white;
+    padding: 7px 0;
+    margin: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
+/* Footer section */
+
+.socialmedia a i {
+    color: #8686f7;
+    font-size: 20px;
+}
+
+.socialmedia a i:hover {
+    color: red;
+}
+
+
+/* Show the button when the user scrolls down 20px from the top of the document */
+body::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f1f1f1;
+}
+body::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Scrolling style */
+
+.about, .portfolio, .buttons, .back-to-top, footer {
+    opacity: 110;
+    transform: translateY(50px);
+    animation: slideIn 1.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media query for screens smaller than 768px (typical phones) */
+@media screen and (max-width: 767px) {
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    nav ul li {
+        margin-right: 20px;
+        display: block;
+        margin: 1px 0;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero {
+        padding: 90px 0;
+        flex-direction: column;
+    }
+
+    .hero div {
+        margin: 20px 0;
+    }
+
+    .hero img {
+        margin: 20px 0;
+        margin-left: 0;
+        width: 70%;
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        border-radius: 20;
+    }
+
+    img {
+        margin: 20px 0;
+    }
+
+    . hero p {
+        color: #6e0707;
+    }
+
+}
+
+/* Media query for screens between 768px and 1024px (typical tablets) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    nav ul li {
+        margin-right: 30px;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero div {
+        margin-left: 40px;
+    }
+
+    .hero img {
+        margin-left: 200px;
+        box-sizing: border-box;
+        border-radius: 200px;
+    }
+}
+
+/* Media query for screens larger than 1024px (typical laptops and desktops) */
+@media screen and (min-width: 1025px) {
+    .hero img {
+        margin-left: 500px;
+        border: 200px;
+    }
+}

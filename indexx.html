@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="/image/kipla.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Header section -->
+
+    <header>
+        <a href="/" class="my-name">Geoffrey Kiplagat</a>
+        <nav>
+            <ul>
+                <li><a href="/index.html"> <i class="fas fa-home"></i> Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+
+    <section class="hero">
+        <div>
+            <h1>Hi, am <span class="port-folio"> Jeff</span> here.</h1>
+
+            <p> I am a  <span class="designer">Software Developer</span>
+            &<span class="designer">Web Designer</span> with an experience in developing many webpages</p>
+            
+            <button type="button" onclick="redirectToPage('comingsoon.html')" style="font-size: 20px;" class="need-site">Need website <i class="fas fa-question"></i> </button>
+
+        </div>
+        <img src="images/kipla.png" alt="keyboardwarrior" srcset="">
+
+        
+
+    </section>
+    <section class="hire-container">
+        <div class="hire-me">
+            <button type="button" onclick="redirectToPage('comingsoon.html')">Contract<br><hr><span class="emoji">😊</span></button>
+            <button type="button" onclick="redirectToPage('comingsoon.html')">Hire me<br><hr><span class="emoji">😊</span></button>
+        </div>
+        
+        <script>
+            function redirectToPage(page) {
+                window.location.href = page;
+            }
+        </script>
+    </section>
+    
+    
+    
+
+
+
+
+    <!-- About section -->
+
+    <section class="about" id="about">
+        <h2> <i class="fas fa-info-circle"></i> About Me</h2>
+        <p>I am a skilled and innovative professional in the field of web design and software development. 
+            With a passion for technology and a keen eye for design, I have established myself as a proficient 
+            web designer and software developer. My expertise lies in creating visually appealing and user-friendly 
+            websites, ensuring seamless user experiences for visitors. In addition to my design prowess, I am a talented 
+            software developer, proficient in various programming languages and technologies. I possess a deep understanding 
+            of software development principles, enabling me to create robust and efficient software solutions tailored to 
+            meet specific client needs. My dedication to staying updated with the latest industry trends and my commitment to 
+            delivering high-quality work make me a sought-after professional in the competitive world of web design and software 
+            development. Clients and colleagues alike admire my creativity, technical skills, and attention to detail, making me 
+            a valuable asset to any project I undertake.</p>
+
+        <div class="about-btns">
+            <h3>My web development languages & progress:</h3>
+            <div class="skill-bar">
+                <label for="html">HTML</label>
+                <progress id="html" max="100" value="94"></progress>
+            </div>
+            <div class="skill-bar">
+                <label for="css">CSS</label>
+                <progress id="css" max="100" value="90"></progress>
+            </div>
+            <div class="skill-bar">
+                <label for="Javascript">Javascript</label>
+                <progress id="Javascript" max="100" value="65"></progress>
+            </div>
+            <div class="skill-bar">
+                <label for="rdbms">R-DBMS</label>
+                <progress id="rdbms" max="100" value="76"></progress>
+            </div>
+
+            <h3>My OOP & stats:</h3>
+            <div class="skill-bar">
+                <label for="Java">Java</label>
+                <progress id="Java" max="100" value="54"></progress>
+            </div>
+            <div class="skill-bar">
+                <label for="C++">C++</label>
+                <progress id="C++" max="100" value="76"></progress>
+            </div>
+
+            <h3>Other high-level language:</h3>
+            <div class="skill-bar">
+                <label for="Python">Python</label>
+                <progress id="Python" max="100" value="70"></progress>
+            </div>
+
+            <h3>Low-level language</h3>
+            <div class="skill-bar">
+                <label for="C">C</label>
+                <progress id="C" max="100" value="75"></progress>
+            </div>
+
+            <h3>Others:</h3>
+            <div class="skill-bar">
+                <label for="Pascal">Pascal</label>
+                <progress id="Pascal" max="100" value="70"></progress>
+            </div>
+        </div>
+            
+
+        
+    </section>
+
+    <hr>
+
+    <!-- Portfolio section -->
+
+    <section class="portfolio">
+        <h2 style="color: rgb(151, 5, 5);"> <u>Portfolio</u> </h2>
+        <div class="project">
+            <h3>My first Project <i class="fas fa-check"></i> </h3>
+            <p>A login form of a random website.</p>
+            <div class="image-gallery">
+                <img src="/images/leo3 (1).png" alt="Project 1">  
+                <img src="/images/leo3 (1).png" alt="Project 1">  
+                <img src="/images/leo3 (1).png" alt="Project 1">  
+                <img src="/images/leo3 (1).png" alt="Project 1">  
+                <img src="/images/leo3 (1).png" alt="Project 1">  
+                <img src="/images/leo3 (1).png" alt="Project 1">  
+            </div>
+        </div>
+        <hr>
+        <div class="project">
+            <h3>My second Project <i class="fas fa-check"></i> </h3>
+            <p>Codes sample of a random website</p>
+            <div class="image-gallery">
+                <img src="images/leo3 (2).png" alt="Project 2">
+                <img src="images/leo3 (2).png" alt="Project 2">
+                <img src="images/leo3 (2).png" alt="Project 2">
+                <img src="images/leo3 (2).png" alt="Project 2">
+                <img src="images/leo3 (2).png" alt="Project 2">
+                <img src="images/leo3 (2).png" alt="Project 2">
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Classes section -->
+
+    <section class="buttons">
+        <h4>
+            Learn and Train?:
+        </h4>
+        <button class="button" onclick="redirectToPage('comingsoon.html')">Front-end development</button>
+        <button class="button" onclick="redirectToPage('comingsoon.html')">Back-end development</button>
+        <button class="button" onclick="redirectToPage('comingsoon.html')">Full-stack development</button>
+    </section>
+    <section>
+        <a href="#top" class="back-to-top">Back to Top</a>
+    </section>
+
+    <!-- Footer section -->
+
+    <footer>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <h5>Designed by: Jeff Kipla</h5>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="tech.js"></script>
+
+</body>
+</html>

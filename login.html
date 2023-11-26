@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="/image/kipla.png">
+    <link rel="stylesheet" href="signupstyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<body>
+    <form action="login.php" method="post">
+        <h1>Log In</h1>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+
+        <button type="submit">Login</button>
+
+        <p>New user? <a href="signup.html">sign up</a> </p>
+    </form>
+
+    <!-- Display login result under the form -->
+    <div id="login-result"></div>
+</body>
+</html>
